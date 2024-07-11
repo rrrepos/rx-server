@@ -34,7 +34,7 @@ app.mount('/', StaticFiles(directory='dist', html=True), name='static')
 
 @app.exception_handler(StarletteHTTPException)
 async def http_exception_handler(request: Request, exc: StarletteHTTPException):
-    return JSONResponse(content={"message": "No Match at all"}, status_code=404)
+    return JSONResponse(content={"message": "No Match"}, status_code=404)
 
 
 if __name__ == '__main__':
