@@ -39,4 +39,4 @@ async def http_exception_handler(request: Request, exc: StarletteHTTPException):
 
 if __name__ == '__main__':
     multiprocessing.freeze_support()
-    uvicorn.run('server:app', host="0.0.0.0", port=8000, workers=2)
+    uvicorn.run('server:app', host="0.0.0.0", port=80, workers=2)
