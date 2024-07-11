@@ -1,0 +1,9 @@
+[Unit]
+Description=Rx Server service
+After=multi-user.target
+[Service]
+Type=simple
+Restart=always
+ExecStart=/usr/bin/python3 /home/ec2-user/rx-server/server.py
+[Install]
+WantedBy=multi-user.target
